@@ -1,0 +1,5 @@
+build guest - cargo build --target wasm32-wasi
+
+build host - cargo build -p host -r
+
+run the guest.wasm with the host - wasm-tools component new ../target/wasm32-wasi/debug/guest.wasm -o guest.wasm --adapt ../wasi_snapshot_preview1.reactor.wasm 

@@ -1,0 +1,4 @@
+interface operation {
+    use complex.{num};
+    add: func(a:num, b:num) -> num;
+}

@@ -1,0 +1,6 @@
+interface complex {
+    record num {
+        real: u16,
+        imag: u16
+    }
+}
